@@ -1,7 +1,7 @@
 import com.scl.*
 
 def call(){
-    def pt = new PodTemplate()
+    def pt = new PodTemplates()
 
     podTemplate(yaml: pt.test()){
         stage("Test"){
