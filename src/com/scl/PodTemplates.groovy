@@ -13,10 +13,10 @@ class PodTemplates {
         this.envName = envName
         this.yaml = """
 ---
-apiVersion: v1
-kind: Pod
-spec:
-  containers:
+//apiVersion: v1
+//kind: Pod
+//spec:
+//  containers:
 """
     }
 
