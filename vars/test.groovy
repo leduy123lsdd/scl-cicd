@@ -1,7 +1,7 @@
 import com.scl.*
 
 def call(){
-    def pt = new PodTemplates()
+    def pt = new PodTemplates("","").addKaniko()
 
     podTemplate(yaml: pt.test()){
         stage("Test"){
