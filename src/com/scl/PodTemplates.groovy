@@ -35,6 +35,21 @@ spec:
         return this
     }
 
+    PodTemplates addGcloud() {
+        this.yaml += """
+  - name: gcloud
+    image: profiletechnology/gcloud-kubectl
+    tty: true
+    command:
+    - /bin/bash
+    resources:
+      requests:
+        cpu: 100m
+        memory: 500Mi
+"""
+        return this
+    }
+
 
     @NonCPS
     String toString() {
