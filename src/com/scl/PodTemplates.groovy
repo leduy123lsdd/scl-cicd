@@ -38,7 +38,7 @@ spec:
     PodTemplates addGcloud() {
         this.yaml += """
   - name: gcloud
-    image: profiletechnology/gcloud-kubectl
+    image: profiletechnology/gcloud-kubectl:1.0.0
     tty: true
     command:
     - /bin/bash
