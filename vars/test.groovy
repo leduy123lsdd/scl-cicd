@@ -6,7 +6,7 @@ def call(){
         node(POD_LABEL) {
             stage("Test"){
                 container("kaniko") {
-                    sh "echo haha"
+                    sh "kaniko --version"
                 }
             }
         }
