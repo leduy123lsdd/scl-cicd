@@ -1,9 +1,9 @@
 import com.scl.*
 
 def call(){
-    PodTemplate pt = new PodTemplate("big-cumulus-288805","dev").addKaniko()
+    def pt = new PodTemplate()
 
-    podTemplate(yaml: pt.toString()){
+    podTemplate(yaml: pt.test()){
         stage("Test"){
             container("kaniko") {
                 sh "echo haha"
