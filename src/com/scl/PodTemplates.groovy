@@ -4,24 +4,24 @@ import com.cloudbees.groovy.cps.NonCPS
 
 class PodTemplates {
 
-  String yaml
-  def projectName
-  def envName
+    String yaml
+    def projectName
+    def envName
 
-  PodTemplates(projectName = "", envName = "") {
-    this.projectName = projectName
-    this.envName = envName
-    this.yaml = """
+    PodTemplates(projectName = "", envName = "") {
+        this.projectName = projectName
+        this.envName = envName
+        this.yaml = """
 ---
 apiVersion: v1
 kind: Pod
 spec:
   containers:
 """
-  }
+    }
 
-  PodTemplates addKaniko() {
-    this.yaml += """
+    PodTemplates addKaniko() {
+        this.yaml += """
   - name: kaniko
     image: gcr.io/kaniko-project/executor:v1.5.1-debug
     tty: true
@@ -32,12 +32,12 @@ spec:
         cpu: 100m
         memory: 500Mi
 """
-    return this
-  }
+        return this
+    }
 
 
-  @NonCPS
-  String toString() {
-    return this.yaml
-  }
+    @NonCPS
+    String toString() {
+        return this.yaml
+    }
 }
