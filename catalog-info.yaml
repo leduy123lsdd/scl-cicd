@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: scl-cicd
+  annotations:
+    github.com/project-slug: leduy123lsdd/scl-cicd
+spec:
+  type: other
+  lifecycle: unknown
+  owner: devops
