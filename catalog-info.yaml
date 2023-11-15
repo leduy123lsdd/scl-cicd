@@ -3,7 +3,8 @@ kind: Component
 metadata:
   name: scl-cicd
   annotations:
-    github.com/project-slug: leduy123lsdd/scl-cicd
+    github.com/project-slug: leduy123lsdd/scl-cicd    
+    circleci.com/project-slug: github/spotify/pump-station
 spec:
   type: other
   lifecycle: unknown
