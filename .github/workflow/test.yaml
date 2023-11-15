@@ -3,4 +3,4 @@ jobs:
     steps:
       - name: set echoing of commands on and off
         run: |
-          echo hello;
+          echo hellod;
